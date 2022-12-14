@@ -11,4 +11,4 @@ const Statis = () => {
   )
 }
 
-export default Statis
+export default Statis;

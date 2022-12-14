@@ -69,7 +69,26 @@
 .home-anchor:hover{
   color: aqua;
 }
+.Topbar{
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 80%;
+  z-index: 1 !important;
+  transition: all 0.5s ease;
+}
+.TopbarFull{
 
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  z-index: 1 !important;
+  width: 100% !important;
+  transition: all 0.5s ease;
+}
+.navbar-brand{
+  padding: 0 !important;
+}
 .search {
   width: 80%;
 }
@@ -85,24 +104,7 @@
   margin-right: 10px;
   color: grey;
 }
-.Topbar{
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  width: 80%;
-  z-index: 1 !important;
-  transition: all 0.5s ease;
 
-}
-.TopbarFull{
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  z-index: 1 !important;
-  width: 100% !important;
-  transition: all 0.5s ease;
-
-}
 .navbar>.container-fluid{
   justify-content: flex-start !important;
 }
@@ -115,12 +117,16 @@
   right: 0;
   top: 100px !important;
   width: 80%;
+  transition: all 0.5s ease;
+
 }
 .DashboardFull{
   position: absolute;
   right: 0;
   top: 100px !important;
   width: 100%;
+  transition: all 0.5s ease;
+
 }
 .Dashboard-form{
   width: 80%;
@@ -128,9 +134,7 @@
 }
 
 /* Responsiveness */
-
-@media screen and (max-width:1200px) {
-
+@media screen and (max-width:1400px) {
   .sidebar{
     width: 25%;
     background-color: rgb(3, 92, 92);
