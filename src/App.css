@@ -1,0 +1,231 @@
+:root{
+  --primary-color: rgb(90, 11, 163);
+  --white-color: #ffffff;
+}
+
+.sidebar{
+  z-index: 100 !important;
+  padding: 20px !important;
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  background-color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+
+.sidebar-hide{
+  z-index: 100 !important;
+  padding: 20px !important;
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.sidebar-heading{
+  height: 50px;
+  display: flex;
+  font-size: 20px;
+  color: var(--white-color);
+}
+.fa-eercast{
+  line-height: 38px;
+  margin-right: 10px;
+}
+
+.close span{
+  position: absolute;
+  font-size: 40px;
+  right: 10px;
+  top: 0px;
+  padding: 0px 25px;
+  color: var(--white-color);
+  display: none;
+  cursor: pointer;
+}
+.sidebar:hover .close span {
+   display: block;
+}
+.sidebar-menu{
+  margin-top: 20px;
+  color: var(--white-color);
+}
+.sidebar-menu .menu h3{
+  font-size: 20px;
+  padding: 5px 0px !important;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card{
+  margin: 10px auto;
+  width: 50%;
+}
+.home-anchor{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.home-anchor:hover{
+  color: aqua;
+}
+
+.search {
+  width: 80%;
+}
+.search input{
+  width: 80%;
+  padding: 5px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+}
+.search .fa-search{
+  font-size: 20px;
+  margin-right: 10px;
+  color: grey;
+}
+.Topbar{
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 80%;
+  z-index: 1 !important;
+  transition: all 0.5s ease;
+
+}
+.TopbarFull{
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  z-index: 1 !important;
+  width: 100% !important;
+  transition: all 0.5s ease;
+
+}
+.navbar>.container-fluid{
+  justify-content: flex-start !important;
+}
+.fa-bars{
+  cursor: pointer;
+}
+/* Dashboard */
+.Dashboard{
+  position: absolute;
+  right: 0;
+  top: 100px !important;
+  width: 80%;
+}
+.DashboardFull{
+  position: absolute;
+  right: 0;
+  top: 100px !important;
+  width: 100%;
+}
+.Dashboard-form{
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width:1200px) {
+
+  .sidebar{
+    width: 25%;
+    background-color: rgb(3, 92, 92);
+  }
+  .sidebar-hide{
+
+    width: 25%;
+}
+  .sidebar-heading{
+    font-size: 18px;
+  }
+  .close span{
+    font-size: 30px;
+  right: 0px;
+
+  }
+  .Topbar{
+    width: 75%;
+  }
+  .Dashboard{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width:998px) {
+  .sidebar{
+    width: 30%;
+    background-color: rgb(35, 102, 8);
+
+  }
+  .sidebar-hide{
+
+    width: 30%;
+}
+  .sidebar-heading{
+    font-size: 15px;
+  }
+  .close span{
+    font-size: 20px;
+  }
+  .Topbar{
+    width: 70%;
+  }
+  .Dashboard{
+    width: 70%;
+  }
+  }
+  @media screen and (max-width:768px) {
+    html{
+      font-size: 62.5%;
+    }
+    .sidebar{
+      width: 32%;
+    background-color: rgb(47, 7, 110);
+
+    }
+    .sidebar-hide{
+  
+      width: 32%;
+  }
+  .fa-eercast{
+    line-height: 30px;
+  }
+
+
+  .Topbar{
+    width: 68%;
+  }
+  .Dashboard{
+    width: 68%;
+  }
+  }
+  @media screen and (max-width:576px) {
+    html{
+      font-size: 52.5%;
+    }
+    .sidebar{
+      width: 100%;
+    background-color: rgb(92, 3, 33);
+
+    }
+    .sidebar-hide{
+      width: 100%;
+  }
+  .Topbar{
+    width: 100%;
+  }
+  .Dashboard{
+    width: 100%;
+  }
+  .close span{
+    display: block;
+  }
+  .fa-eercast{
+    line-height: 20px;
+  }
+
+  }
